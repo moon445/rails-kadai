@@ -1,0 +1,9 @@
+<div class="card mb-3">
+  <div class="card-body">
+    <h5 class="card-title"><%= post.title %></h5>
+    <p class="card-text"><%= post.content %></p>
+    <%= link_to 'Show', post, class: "btn btn-outline-primary" %>
+    <%= link_to 'Edit', edit_post_path(post), class: "btn btn-outline-primary" %>
+    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger" %>
+  </div>
+</div>
